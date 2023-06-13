@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background-color: #3a4764;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 35%;
+  height: 80%;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.calc-header h1 {
+  font-size: 1.5rem;
+}
+
+#output {
+  padding: 1rem 12px;
+  height: 20%;
+  width: 100%;
+  overflow-x: auto;
+  background-color: #182034;
+  margin: 1.2rem 0;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.btns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  gap: 15px;
+  padding: 1.2rem;
+  background-color: #232c43;
+  border-radius: 6px;
+}
+
+.equal {
+  grid-column: span 2;
+}
+
+.btns-container button {
+  font-size: 1.3rem;
+  color: #232c43;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid rgba(128, 128, 128, 0.4);
+  border-radius: 5px;
+}
+
+.btns-container button:hover {
+  background-color: #fff;
+}
+
+.btns-container .reset {
+  grid-column: span 2;
+  background-color: #35486f;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.btns-container button.reset:hover,
+.btns-container button.del:hover {
+  background-color: #40547b;
+}
+
+.btns-container .del {
+  color: #fff;
+  background-color: #35486f;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.btns-container .del,
+.btns-container .reset {
+  border-bottom: 5px solid rgba(29, 47, 84, 0.4);
+}
+
+.btns-container .equal {
+  color: #fff;
+  background-color: #d03f2f;
+  border-bottom: 5px solid rgba(236, 35, 12, 0.4);
+}
+
+.btns-container button.equal:hover {
+  background-color: #db4939;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+  }
+}
