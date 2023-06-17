@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./app.js" defer></script>
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Let's Play Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+      <h2>First to 5 win this game!</h2>
+      <div class="hands">
+        <button id="rock" class="hands-btn rock">✊</button>
+        <button id="paper" class="hands-btn paper">✋</button>
+        <button id="scissors" class="hands-btn scissors">✌️</button>
+      </div>
+      <div class="battle-arena">
+        <div class="user-selection">
+          <output>?</output>
+          <p>User</p>
+        </div>
+        <div>
+          <span class="versus">VS</span>
+          <button class="play-btn">Play Again</button>
+        </div>
+        <div class="computer-selection">
+          <output>?</output>
+          <p>Computer</p>
+        </div>
+      </div>
+      <div class="score-container">
+        <div class="score user-score">0</div>
+        <div class="score computer-score">0</div>
+      </div>
+    </main>
+
+    <div class="modal-backdrop">
+      <div class="modal">
+        <h3></h3>
+        <button>OK</button>
+      </div>
+    </div>
+  </body>
+</html>
